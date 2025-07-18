@@ -1,0 +1,533 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>trangchu.com</title>
+    <link rel="stylesheet" href="homecss.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="path/to/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <!-- jQuery and Bootstrap JS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/@tabler/icons@latest/iconfont/tabler-icons.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/@tabler/icons@latest/icons-react/dist/index.umd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+	
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    
+</head>
+
+<body>  
+<!-- HEADER -->
+    <header>
+        <!-- Phần 1 -->
+        <div id="baner">
+            <table class="table-banner">
+                <tr>
+                    <td  id="id1">   
+                        <h5 id="title1" ><marquee direction="right">Tiệm đồ handmade - Cuộc sống muôn màu</marquee></h5>
+                    </td>
+                    <td id="id2">
+                        <div class="baner-icon">
+                            <a href="https://www.facebook.com/profile.php?id=61560045097340&locale=vi_VN"><i id="icon1" class="fab fa-facebook-f col-md-1"></i></a>
+                            <a href="https://www.tiktok.com/vi-VN/"><i id="icon1" class="fab fa-tiktok col-md-1"></i></a>
+                            <a href="https://www.instagram.com/"><i id="icon1" class="fab fa-instagram col-md-1"></i></a>
+                        </div> 
+                    </td>
+                </tr>
+            </table>
+        </div>
+      
+    <!-- Phần 2 -->
+        <div id="baner1">
+            <a href="Trangchu.html"><img src="image1/logoD.png" class="logoD"></a>
+            <form action="#" class="searchform order-sm-start order-lg-last">
+                <div class="form-group d-flex">
+                  <input type="text" class="form-control pl-3" placeholder="Search">
+                  <button type="submit" placeholder="" class="form-control search"><span class="fa fa-search"></span></button>
+                </div>
+            </form>
+            <div class="icon-main">
+                <a href="dangnhap.html"> <i class="fas fa-user icon5"></i></a>
+                <a href="yeuthich.html"> <i class="fas fa-heart icon5"></i></a>
+                <a href="giohang.html"> <i class="fas fa-shopping-cart icon5"></i></a>
+            </div>
+        </div>
+        
+
+    <!-- Phần 3 -->
+        <div id="menu">
+            <div id="toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+
+            <nav>
+                <ul id="main-menu">
+                    <li>
+                       <a  href="Trangchu.html">TRANG CHỦ</a>
+                    </li> 
+                    <li>
+                        <a href="gioithieu.html">GIỚI THIỆU</a>
+                    </li> 
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="cuahang.html" id="dropdown04">CỬA HÀNG</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdown04">
+                            <a class="dropdown-item" href="gaubong.html">Gấu bông và gối handmade</a>
+                            <a class="dropdown-item" href="hoa.html">Hoa kẽm nhung</a>
+                            <a class="dropdown-item" href="tranhhoakho.html">Tranh handmade</a>
+                            <a class="dropdown-item" href="nen.html">Nến thơm</a>
+                            <a class="dropdown-item" href="tui.html">Túi</a>
+                        </div>
+                    </li>  
+                    <li>
+                        <a href="blog.html">BLOG</a>
+                    </li> 
+                    <li>
+                        <a  href="lienhe.html">LIÊN HỆ</a>
+                    </li> 
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+ 
+        <!-- Javascript Cuahang-->
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+        var dropdown = document.getElementById('dropdown04');
+        var dropdownMenu = dropdown.nextElementSibling;
+    
+        dropdown.addEventListener('mouseover', function() {
+            dropdownMenu.style.display = 'block';
+        });
+    
+        dropdown.addEventListener('mouseout', function() {
+            setTimeout(function() {
+                if (!dropdownMenu.matches(':hover')) {
+                    dropdownMenu.style.display = 'none';
+                }
+            }, 300);
+        });
+    
+        dropdownMenu.addEventListener('mouseover', function() {
+            dropdownMenu.style.display = 'block';
+        });
+    
+        dropdownMenu.addEventListener('mouseout', function() {
+            dropdownMenu.style.display = 'none';
+        });
+    });
+        </script>
+    
+       
+
+<!-- SLIDER -->
+        <div>
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <a href="cuahang.html">
+                            <img class="d-block" src="image1/banner3.png" alt="First slide">
+                        </a>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="cuahang.html">
+                            <img class="d-block" src="image1/bannersale.png" alt="First slide">
+                        </a>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="Trangchu.html">
+                            <img class="d-block" src="image1/banner1.png" alt="First slide">
+                        </a>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+
+
+
+    <!-- CONTENT 1: Danh Mục Sản Phẩm  -->
+    <span class="lineleft"></span><span class="centerSpan"><i class="glyphicon glyphicon-list"></i> DANH MỤC SẢN PHẨM</span><span class="lineright"></span><br>
+
+    <div class="main-img">
+        <div class="image-container1">
+            <img src="https://i.pinimg.com/564x/79/13/20/7913207d979b0c3330f28b7517171089.jpg" class="circle-img" alt="Image 1">
+            <div class="image-caption"><a href="tui.html" class="a1">TÚI VẢI</a></div>
+        </div>
+        <div class="image-container1">
+            <img src="https://i.pinimg.com/564x/5e/b2/57/5eb2573f597dca3af943e6faada9dc00.jpg" class="circle-img" alt="Image 2">
+            <div class="image-caption"><a href="gaubong.html">GẤU HANDMADE</a></div>
+        </div>
+        <div class="image-container1">
+            <img src="https://i.pinimg.com/564x/38/b3/75/38b375fc2400006f6262564835753c84.jpg" class="circle-img" alt="Image 3">
+            <div class="image-caption"><a href="hoa.html">HOA HANDMADE</a></div>
+        </div>
+        <div class="image-container1">
+            <img src="https://i.pinimg.com/564x/19/52/e0/1952e0a79ffae3b1e3ea820a09b0cb50.jpg" class="circle-img" alt="Image 4">
+            <div class="image-caption"><a href="tranhhoakho.html">TRANH HOA KHÔ</a></div>
+        </div>
+        <div class="image-container1">
+            <img src="https://i.pinimg.com/564x/7d/41/9e/7d419e508418b08ffbf5a78c34a60756.jpg" class="circle-img" alt="Image 4">
+            <div class="image-caption"><a href="gaubong.html">MÓC KHÓA</a></div>
+        </div>
+        <div class="image-container1">
+            <img src="https://i.pinimg.com/564x/bc/0e/e7/bc0ee768c2435fe0c00c70ba3cd538e0.jpg" class="circle-img" alt="Image 4">
+            <div class="image-caption"><a href="gaubong.html">GỐI</a></div>
+        </div>
+    </div>
+
+
+    <!-- CONTENT 2: Sản Phẩm Bán Chạy -->
+    <span class="lineleft"></span><span class="centerSpan"><i class="bi bi-handbag-fill"></i> SẢN PHẨM BÁN CHẠY</span><span class="lineright"></span><br>
+
+    <div class="main-img">
+        <div class="image-container2" data-aos="flip-left"  data-aos-easing="ease-out-cubic" data-aos-duration="1000">
+            <img src="https://i.pinimg.com/564x/64/98/38/64983895465aaf7544f73dbbd06e514f.jpg" class="square-img" alt="Image 1">
+            <div class="image-content">
+                <h4><label id ="sale">-20% </label>HOA HANDMADE</h4>
+                <p><a href="hoa.html">Combo 10 hoa anh túc handmade xanh dương</a></p>
+                <del>Giá: 90.000 đ</del><br>
+                <b>Sale: 70.000 đ</b>
+            </div>
+        </div>
+
+        <div class="image-container2" data-aos="flip-left"  data-aos-easing="ease-out-cubic" data-aos-duration="1000">
+            <img src="https://i.pinimg.com/564x/ae/db/99/aedb995d3bd4b48dbec306f50c8b5786.jpg" class="square-img" alt="Image 1">
+            <div class="image-content">
+                <h4><label id ="sale">-20% </label>GẤU HANDMADE</h4>
+                <p><a href="gaubong.html">Móc khóa hình sư tử mẫu mới hot trend</a></p>
+                <del>Giá: 100.000đ</del><br>
+                <b>Sale: 86.000 đ</b>
+            </div>
+        </div>
+
+        <div class="image-container2" data-aos="flip-left"  data-aos-easing="ease-out-cubic" data-aos-duration="1000">
+            <img src="https://i.pinimg.com/564x/53/c3/c8/53c3c8382f73538f1504d71c0ebfb46e.jpg" class="square-img" alt="Image 1">
+            <div class="image-content">
+                <h4><label id ="sale">-8% </label>HOA HANDMADE</h4>
+                <p><a href="hoa.html">Xương rồng đan bằng len mix nhiều kiểu.</a></p>
+                <del>Giá: 99.000 đ</del><br>
+                <b>Sale: 89.000 đ</b>
+            </div>
+        </div>
+
+        <div class="image-container2" data-aos="flip-left"  data-aos-easing="ease-out-cubic" data-aos-duration="1000">
+            <img src="https://i.pinimg.com/564x/73/41/7d/73417d15f895ff3c21901727517c52c1.jpg" class="square-img" alt="Image 1">
+            <div class="image-content" >
+                <h4><label id ="sale">-30% </label>TRANH HOA KHÔ</h4>
+                <p><a href="tranhhoakho.html">Set 5 thiệp chúc mừng, gửi thư màu loang</a></p>
+                <del>Giá: 50.000 đ</del><br>
+                <b>Sale: 36.000 đ</b>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- CONTENT 3: Tin Tức -->
+    <span class="lineleft1"></span><span class="centerSpan1"><i class="bi bi-newspaper"></i> TIN TỨC</span><span class="lineright1"></span><br>
+    <div id="main-news">
+        <div id="newsCarousel" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#newsCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#newsCarousel" data-slide-to="1"></li>
+                <li data-target="#newsCarousel" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                            <div class="image-container3">
+                                <img src="https://i.pinimg.com/564x/2f/aa/f9/2faaf96a11ddb5ca8c4acb3eb8186872.jpg" class="square-img3" alt="Image 1">
+                                <div class="image-content3">
+                                    <h4>MẪU GỐI HANDMADE 2024 MỚI NHẤT</h4>
+                                    <h5><a href="gaubong.html">Combo 5 mẫu gối handmade mà bạn nên biết. màu sắc đa dạng [...]</a></h5>
+                                </div>
+                            </div>
+                        </a>
+                            <div class="image-container3">
+                                <img src="https://i.pinimg.com/564x/87/77/7b/87777b073e0b382b3f3f5b72d70e58f8.jpg" class="square-img3" alt="Image 1">
+                                <div class="image-content3">
+                                    <h4>XU HƯƠNG THỜi TRANG - TÚI HANDMADE CÓ GÌ ĐẶC BIỆT?</h4>
+                                    <h5><a href="tui.html">Cùng khám phá những kiểu dáng túi handmade hot trend của nhà HandyCraft [...]</a></h5>
+                                </div>
+                            </div>
+                        </a>
+                            <div class="image-container3">
+                                <img src="https://i.pinimg.com/736x/2c/60/3e/2c603ef09482b158d6c429a0db61c999.jpg" class="square-img3" alt="Image 1">
+                                <div class="image-content3">
+                                    <h4>CÁCH LÀM HOA BẰNG KẼM NHUNG</h4>
+                                    <h5><a href="hoa.html">Làm hoa bằng kẽm nhưng rẻ, tiện, thẩm mĩ. Hãy đến Handycraft để có nhiều trải nghiệp thú vị [...]</a></h5>
+                                </div>
+                            </div>
+                        </a>
+                </div>
+                
+                <div class="carousel-item">
+                    <div class="image-container3">
+                        <img src="https://i.pinimg.com/564x/10/c0/da/10c0dad77681a696074582abec6cc23d.jpg" class="square-img3" alt="Image 1">
+                        <div class="image-content3">
+                            <h4>TOP MẪU CHART LEN 2024</h4>
+                            <h5><a href="tui.html">Top những mẫu chảt móc len túi đựng điện thoại đẹp nhất hiện nay [...]</a></h5>
+                        </div>
+                    </div>
+                    <div class="image-container3">
+                        <img src="https://i.pinimg.com/564x/b4/00/af/b400afdb7b1abdfa9c092c738013d00b.jpg" class="square-img3" alt="Image 1">
+                        <div class="image-content3">
+                            <h4>NHỮNG MẪU THIỆP CÓ THỂ LÀM TẠI NHÀ</h4>
+                            <h5><a href="tranhhoakho.html">Những mẫu tranh bạn có thể tự làm tại nhà HandyCraft cực đơn giản [...]</a></h5>
+                        </div>
+                    </div>
+                    <div class="image-container3">
+                        <img src="https://i.pinimg.com/736x/43/55/d6/4355d643634238e9daf1aa05027083bc.jpg" class="square-img3" alt="Image 1">
+                        <div class="image-content3">
+                        <h4>CÁCH LỰA CHỌN ĐỒ HANDMADE</h4>
+                        <h5><a href="">Cách lựa chọn đồ handmade phù hợp nhất [...]</a></h5>
+            
+                        </div>
+                    </div>
+                        
+                </div>
+                <div class="carousel-item">
+                    <div class="image-container3">
+                        <img src="https://i.pinimg.com/564x/91/53/0d/91530d2aedf4b57cad3900304980da6b.jpg" class="square-img3" alt="Image 1">
+                        <div class="image-content3">
+                            <h4>GỢI Ý NHỮNG MÓN ĐỒ HANDMADE CỰC XỊN NHÀ HANDYCRAFT</h4>
+                            <h5><a href="nen.html">Đồ handmade không chỉ trang trí, thư giản mà cong để chúng ta sáng tạo [...]</a></h5>
+                        </div>
+                    </div>
+                    <div class="image-container3">
+                        <img src="https://i.pinimg.com/564x/83/5b/14/835b147c933e9ac091805118959002b6.jpg" class="square-img3" alt="Image 1">
+                        <div class="image-content3">
+                            <h4>LỢI ÍCH CỦA NẾN THƠM </h4>
+                            <h5><a href="nen.html">Những lợi ích của nến thơm. Bạn đã sở hữu nó chưa? [...]</a></h5>
+                        </div>
+                    </div>
+                    <div class="image-container3">
+                        <img src="https://i.pinimg.com/564x/d6/81/54/d681545ac17b7da2f88a2c10aecd085b.jpg" class="square-img3" alt="Image 1">
+                        <div class="image-content3">
+                            <h4>CÁCH LÀM HOA LINH LAN CÓ ĐÈN</h4>
+                            <h5><a href="hoa.html">Cách làm hoa linh lan dễ nhất giúp bạn thỏa sức sáng tạo [...]</a></h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#newsCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#newsCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+
+
+
+        <!-- CONTENT 4: Feedback -->
+        <span class="lineleft1"></span><span class="centerSpan1"><i class="bi bi-newspaper"></i> FEEDBACK</span><span class="lineright1"></span><br>
+        <div id="main-feedback">
+            <div id="newsCarousel2" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#newsCarousel2" data-slide-to="0" class="active"></li>
+                    <li data-target="#newsCarousel2" data-slide-to="1"></li>
+                    <li data-target="#newsCarousel2" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                            <div class="image-container4">
+                                <img src="https://i.pinimg.com/564x/3e/c9/f9/3ec9f9fe46a735099609e00bbf4d82ce.jpg" class="square-img4" alt="Image 1">
+                                <div class="image-content4">
+                                    <h4>Hana Lê</h4>
+                                    <h5>Sản phẩm rất xinh đẹp tuyệt vời, tôi không thể trông đợi gì hơn. Đúng mo  tả sản phẩm.</h5>
+                                </div>
+                            </div>
+                            <div class="image-container4">
+                                <img src="https://i.pinimg.com/564x/54/0e/a7/540ea7dbce52dae07b328b33ea356429.jpg" class="square-img4" alt="Image 1">
+                                <div class="image-content4">
+                                    <h4>Minh Nhật</h4>
+                                    <h5>Hàng đóng gói rất đẹp. Quả nhiên người bán đã gửi gắm rất nhiều tâm tư và tình cảm trong lúc gói hàng. Hộp không có dấu hiệu bị móp. </h5>
+                                </div>
+                            </div>
+                        
+                            <div class="image-container4">
+                                <img src="https://i.pinimg.com/564x/f6/cf/a8/f6cfa8bd71822f28c2b6c981e2fbb693.jpg" class="square-img4" alt="Image 1">
+                                <div class="image-content4">
+                                    <h4>Kim Hạ</h4>
+                                    <h5>Thời gian vận chuyển rất hợp lí. Tôi đã đặt hàng với tâm thế hào hứng chờ đợi để được trải nghiệm sản phẩm. Sản phẩm hợp với giá cả. [...]</h5>
+                                </div>
+                            </div>
+                    </div>
+                    
+                    <div class="carousel-item">
+                        <div class="image-container4">
+                            <img src="https://i.pinimg.com/564x/d6/2a/6a/d62a6a4d076c40ddb298fc7ee394fa49.jpg" class="square-img4" alt="Image 1">
+                            <div class="image-content4">
+                                <h4>Hà Crio</h4>
+                                <h5>Sản phẩm rất xinh đẹp tuyệt vời, tôi không thể trông đợi gì hơn. Đúng mo  tả sản phẩm.</h5>
+                            </div>
+                        </div>
+                        <div class="image-container4">
+                            <img src="https://i.pinimg.com/564x/eb/c3/5b/ebc35bf08e7116bc5edb87dfc77d2ca2.jpg" class="square-img4" alt="Image 1">
+                            <div class="image-content4">
+                                <h4>Vinh Nguyễn</h4>
+                                <h5>Hàng đóng gói rất đẹp. Quả nhiên người bán đã gửi gắm rất nhiều tâm tư và tình cảm trong lúc gói hàng. Hộp không có dấu hiệu bị móp. </h5>
+                            </div>
+                        </div>
+                    
+                        <div class="image-container4">
+                            <img src="https://i.pinimg.com/564x/8a/66/9b/8a669b606cc769582d5aaa85ce0ef55e.jpg" class="square-img4" alt="Image 1">
+                            <div class="image-content4">
+                                <h4>Châu Bùi</h4>
+                                <h5>Thời gian vận chuyển rất hợp lí. Tôi đã đặt hàng với tâm thế hào hứng chờ đợi để được trải nghiệm sản phẩm. Sản phẩm hợp với giá cả.</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <a class="carousel-control-prev" href="#newsCarousel2" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#newsCarousel2" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+
+
+
+    <!-- FOOOTER -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                
+                <div class="col-md-3 footer-col">
+                    <h4>VỀ CHÚNG TÔI</h4>
+                    <p>Chúng tôi chuyên cung cấp các sản phẩm handmade chất lượng cao, mang đến sự sáng tạo và độc đáo cho khách hàng.</p>
+                    <a href="Trangchu.html">
+                        <img src="Image1\Logo1.png" alt="Logo" class="logo">
+                    </a>
+                </div>
+              
+                <div class="col-md-3 footer-col">
+                    <h4>LIÊN HỆ</h4>
+                    <p>Email: HandyCrafthandmade@gmail.com</p>
+                    <p>Phone: 0369 750 269</p>
+                    <p>Facebook: fb.com/handmade</p>
+                    <p>Địa chỉ: 490 Trần Đại Nghĩa, Quận Ngũ Hành Sơn, TP. Đà Nẵng</p>
+                </div>
+               
+                <div class="col-md-3 footer-col">
+                    <h4>CHÍNH SÁCH</h4>
+                    <p><a href="#">Chính sách bảo mật</a></p>
+                    <p><a href="#">Chính sách đổi trả</a></p>
+                    <p><a href="#">Chính sách vận chuyển</a></p>
+                </div>
+              
+                <div class="col-md-3 footer-col">
+                    <h4>ĐỊA CHỈ</h4>
+                    <div class="map-container">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3835.7927751871375!2d108.24709417525017!3d15.972194542028062!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x314210880eedcf27%3A0x88fc9cdcb6d63f85!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBDw7RuZyBuZ2jhu4cgVGjDtG5nIHRpbiB2w6AgVHJ1eeG7gW4gdGjDtG5nIFZp4buHdCBIw6BuIC0gxJDhuqFpIGjhu41jIMSQw6AgTuG6tW5n!5e0!3m2!1svi!2s!4v1716735218842!5m2!1svi!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>                    </div>
+                </div>
+            </div>
+            <hr width="100%" size="0.5px" color="gray" align="center" /> 
+            <div class="footer-bottom">
+                <p id="banquyen">HandyCraft Handmade 2024 <font color ="grey">&#169;</font> Designed by HYT</p>
+                <button onclick="topFunction()" id="backToTopBtn" title="Go to top"><i class="bi bi-chevron-double-up"></i></button>
+            </div>
+        </div>
+        
+    </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+<!-- CHATBOX -->
+<div class="chat-container">
+    <div id="chatbox" class="chatbox">
+        <div class="chatbox-content">
+            <i class="fab fa-facebook-messenger"></i>
+        </div>
+    </div>
+    <div id="callbox" class="callbox">
+        <div class="callbox-content">
+            <i class="fas fa-phone"></i>
+        </div>
+    </div>
+</div>
+
+<script>
+        document.getElementById('chatbox').addEventListener('click', function() {
+            this.classList.add('shake');
+            setTimeout(() => {
+                this.classList.remove('shake');
+            }, 500);
+        });
+
+        document.getElementById('callbox').addEventListener('click', function() {
+            this.classList.add('shake');
+            setTimeout(() => {
+                this.classList.remove('shake');
+            }, 500);
+        });
+
+           // JS_backToTopBtn
+            window.onscroll = function() {scrollFunction()};
+
+            function scrollFunction() {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    document.getElementById("backToTopBtn").style.display = "block";
+                } else {
+                    document.getElementById("backToTopBtn").style.display = "none";
+                }
+            }
+
+            function topFunction() {
+                document.body.scrollTop = 0; 
+                document.documentElement.scrollTop = 0; 
+            }
+           // hiệu ứng chuyển động
+            AOS.init();
+            //thanh menu
+            //menu
+            $(document).ready(function(){
+                        $('#toggle').click(function(){
+                            $('nav').slideToggle();
+                         });
+                     })
+</script>
+
+
+</body>
+</html>

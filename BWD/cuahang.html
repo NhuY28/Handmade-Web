@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>cuahang.com</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="JS.js">
+        <link rel="stylesheet" type="text/css" href="CSS.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://unpkg.com/@tabler/icons@latest/iconfont/tabler-icons.min.css">
+        <script src="https://unpkg.com/@tabler/icons@latest/icons-react/dist/index.umd.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"></script>
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css">
+
+    </head>
+    <body>
+       
+   <!-- HEADER -->
+   <header>
+    <!-- Phần 1 -->
+    <div id="baner">
+        <table class="table-banner">
+            <tr>
+                <td  id="id1">   
+                    <h5 id="title1"><marquee direction="right">Tiệm đồ handmade - Cuộc sống muôn màu</marquee></h5>
+                </td>
+                <td id="id2">
+                    <div class="baner-icon">
+                        <a href="https://www.facebook.com/profile.php?id=61560045097340&locale=vi_VN"><i id="icon1" class="fab fa-facebook-f col-md-1"></i></a>
+                        <a href="https://www.tiktok.com/vi-VN/"><i id="icon1" class="fab fa-tiktok col-md-1"></i></a>
+                        <a href="https://www.instagram.com/"><i id="icon1" class="fab fa-instagram col-md-1"></i></a>
+                    </div> 
+                </td>
+            </tr>
+        </table>
+    </div>
+  
+<!-- Phần 2 -->
+    <div id="baner1">
+        <a href="Trangchu.html"><img src="image1/logoD.png" class="logoD"></a>
+        <form action="#" class="searchform order-sm-start order-lg-last">
+            <div class="form-group d-flex" id="search-all">
+              <input type="text" class="form-control pl-3" placeholder="Search">
+              <button type="submit" placeholder="" class="form-control search"><span class="fa fa-search"></span></button>
+            </div>
+        </form>
+        <div class="icon-main">
+            <a href="dangnhap.html"><i class="fas fa-user icon5"></i></a>
+            <a href="yeuthich.html"><i class="fas fa-heart icon5"></i></a>
+            <a href="giohang.html"><i class="fas fa-shopping-cart icon5"></i></a>
+        </div>
+    </div>
+    
+
+<!-- Phần 3 -->
+    <div id="menu">
+        <div id="toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+
+        <nav>
+            <ul id="main-menu">
+                <li>
+                   <a  href="Trangchu.html">TRANG CHỦ</a>
+                </li> 
+                <li>
+                    <a href="gioithieu.html">GIỚI THIỆU</a>
+                </li> 
+                <li class="nav-item dropdown">
+                    <a class="nav-link" href="cuahang.html" id="dropdown04">CỬA HÀNG</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdown04">
+                        <a class="dropdown-item" href="gaubong.html">Gấu bông và gối handmade</a>
+                        <a class="dropdown-item" href="hoa.html">Hoa kẽm nhung</a>
+                        <a class="dropdown-item" href="tranhhoakho.html">Tranh handmade</a>
+                        <a class="dropdown-item" href="nen.html">Nến thơm</a>
+                        <a class="dropdown-item" href="tui.html">Túi</a>
+                    </div>
+                </li>  
+                <li>
+                    <a href="blog.html">BLOG</a>
+                </li> 
+                <li>
+                    <a  href="lienhe.html">LIÊN HỆ</a>
+                </li> 
+            </ul>
+        </nav>
+    </div>
+</header>
+
+    <div id="maincontent">
+            <!-- Phần 4 -->
+            <div id="slide">
+               <div id="slide-main"  class="col-md-12">
+                <div id="slide1" class="col-md-4"><a id="a1" href="cuahang.html">TRANG CHỦ/</a>TRANG 1</div>
+                <div id="slide2" class="col-md-8">
+                    Hiển thị kết quả
+                    <select name="combox1" id="combox1">
+                        <option value="option1">Thứ tự mặc định</option>
+                        <option value="option2">Thứ tự theo mức độ phổ biến</option>
+                        <option value="option3">Thứ tự theo điểm đánh giá</option>
+                        <option value="option4">Mới nhất</option>
+                        <option value="option5">Thứ tự theo giá: thấp đến cao</option>
+                        <option value="option5">Thứ tự theo giá: cao đến thấp</option>
+                    </select>
+
+                </div>
+               </div>
+               
+            </div>
+
+            <!-- Nội dung -->
+            <div id="allcontent">
+            <div id="left">
+                    <div id="left-danhsach">
+
+                        <h4>DANH SÁCH SẢN PHẨM </h4>
+                        <hr>
+                        <a class="lienket2" href="gaubong.html">Gấu bông handmade</a>
+                        <hr>
+                        <a class="lienket2" href="nen.html">Nến handmade</a>
+                        <hr>
+                        <a class="lienket2" href="tui.html">Túi handmade</a>
+                        <hr>
+                        <a class="lienket2" href="tranhhoakho.html">Tranh hoa khô handmade</a>
+                        <hr>
+                        <a class="lienket2" href="hoa.html">Hoa handmade</a>
+                        <hr>
+                
+
+                    </div>
+
+                    <div id="left-giaban">
+
+                        <h4>GIÁ BÁN</h4>
+                        <input type="range" min="1" max="100" value="50" class="slider" id="range1">
+                        <label for="">Giá: <span id="demo"></span></label> <input type="text" id="text2">
+                        <input type="submit" name="locgia" id="loc" value="Lọc">
+                        <hr>
+
+                    </div>
+                 
+                    <div id="left-sanpham">
+
+                        <h4 >SẢN PHẨM</h4>
+                        <table>
+                            <tr class="col-md-12" id="hang1">
+                                <td class="col-md-5" id="cot1">
+                                    <img src="https://bizweb.dktcdn.net/100/267/913/products/thiet-ke-chua-co-ten-33.png?v=169477044221" alt="" id="anh1">
+                                </td>
+                                <td class="col-md-7" id="cot2">
+                                    <p id="lab1"><a href="sanpham7.html" id="lienket3">Tulip bằng len handmade,làm quà tặng</a></p>
+                                    <p id="giakhuyenmai1">70.000đ &#160;<label id="dongia1"> 50.000đ</label></p> 
+                                </td>
+                            </tr>
+        
+                            <tr class="col-md-12" id="hang1">
+                                <td class="col-md-5" id="cot1">
+                                    <img src="https://cdn.chonongsanonline.com/uploads/all/NsH8iTsSgPVpiYJFOWA4nanvNtdI0hEa9TFs8kkD.jpg" alt="" id="anh1">
+                                </td>
+                                <td class="col-md-7" id="cot2">
+                                    <p id="lab1"><a href="sanpham4.html" id="lienket3">Gấu mini siêu cute giảm giá sốc</a></p>
+                                    <p id="giakhuyenmai1">40.000đ <label id="dongia1"> 30.000đ</label></p>                        
+                                </td>
+                            </tr>
+        
+                            <tr class="col-md-12" id="hang1">
+                                <td class="col-md-5" id="cot1">
+                                    <img src="https://bizweb.dktcdn.net/thumb/1024x1024/100/427/928/products/khung-anh-handmade.jpg?v=1645580612553" alt="" id="anh1">
+                                </td>
+                                <td class="col-md-7" id="cot2">
+                                    <p id="lab1"><a href="sanpham8.html" id="lienket3">Tranh handmade hot trend làm bằng hoa khô</a></p>
+                                    <p id="giakhuyenmai1">90.000đ <label id="dongia1"> 70.000đ</label></p>                        
+                                </td>
+                            </tr>
+        
+                            <tr class="col-md-12" id="hang1">
+                                <td class="col-md-5" id="cot1">
+                                    <img src="https://salt.tikicdn.com/cache/550x550/ts/product/54/d0/47/514486a13dcdb65649872918f34d98e6.jpg" alt="" id="anh1">
+                                </td>
+                                <td class="col-md-7" id="cot2">
+                                    <p id="lab1"><a href="sanpham6.html" id="lienket3">Tuí thời trang hàn quốc tự đan tay giảm giá sốc</a></p>
+                                    <p id="giakhuyenmai1">120.000đ <label id="dongia1"> 90.000đ</label></p>                        
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+            </div>
+
+    
+            <div id="center1">
+                <div id="sanpham1" data-aos="zoom-in">
+                        <img src="https://i.pinimg.com/564x/83/5b/14/835b147c933e9ac091805118959002b6.jpg" alt="" id="anh">
+                        <div class="checkbox-icon">
+                            <input type="checkbox" id="select">
+                            <label for="select"><i class="fas fa-heart"></i></label>
+                            <input type="checkbox" id="cart">
+                            <label for="cart"><i class="fas fa-shopping-cart"></i></label>
+                        </div>              
+                        <h6 id="mucluc"><label id ="sale">-20% </label>NẾN HANDMADE</h6>
+                        <h5 id="chitiet"><a href="sanpham1.html">Nến thơm, sáp thiên nhiên</a></h5>
+                        <h5 id="giakhuyenmai">60.000đ<label id="dongia"> 40.000đ</label></h5>
+                       
+                </div>
+               
+                
+
+                <div id="sanpham" data-aos="zoom-in">      
+                    <img src="https://bizweb.dktcdn.net/100/267/913/products/ba3ae0827b98d551fe2a8687d96b2364-5ea09179-6095-4b2f-b6db-2921e596e011.jpg?v=1692074633177" alt="" id="anh">
+                    <div class="checkbox-icon">
+                        <input type="checkbox" id="select2">
+                        <label for="select2"><i class="fas fa-heart"></i></label>
+                        <input type="checkbox" id="cart2">
+                        <label for="cart2"><i class="fas fa-shopping-cart"></i></label>
+                    </div>            
+                    <h6 id="mucluc"><label id ="sale">HOT</label>GẤU BÔNG HANDMADE</h6>
+                    <h5 id="chitiet"><a href="sanpham2.html">Gấu dâu siêu cute</a></h5>
+                    <label id="dongia"> 20.000đ</label>
+                    
+                </div>
+
+                <div id="sanpham" data-aos="zoom-in">
+                    <img src="https://img.lazcdn.com/g/p/34e1ed86affa57372c9680b7a0e2485b.jpg_720x720q80.jpg" alt="" id="anh">
+                    <div class="checkbox-icon">
+                        <input type="checkbox" id="select3">
+                        <label for="select3"><i class="fas fa-heart"></i></label>
+                        <input type="checkbox" id="cart3">
+                        <label for="cart3"><i class="fas fa-shopping-cart"></i></label>
+                    </div>            
+                    <h6 id="mucluc"><label id ="sale">HOT</label>GẤU BÔNG HANDMADE</h6>
+                    <h5 id="chitiet"><a href="sanpham3.html">Gấu bông phụ kiện móc khóa</a></h5>
+                    <label id="dongia"> 10.000đ</label>
+                </div>
+
+                
+
+            </div>
+
+            <div id="center2">
+                <div id="sanpham1" data-aos="zoom-in">
+                    <img src="https://cdn.chonongsanonline.com/uploads/all/NsH8iTsSgPVpiYJFOWA4nanvNtdI0hEa9TFs8kkD.jpg" alt="" id="anh">
+                    <div class="checkbox-icon">
+                        <input type="checkbox" id="select4">
+                        <label for="select4"><i class="fas fa-heart"></i></label>
+                        <input type="checkbox" id="cart4">
+                        <label for="cart4"><i class="fas fa-shopping-cart"></i></label>
+                    </div>            
+                    <h6 id="mucluc"><label id ="sale">-20% </label>GẤU BÔNG HANDMADE</h6>
+                    <h5 id="chitiet"><a href="sanpham4.html">Gấu bông mini</a></h5>
+                    <h5 id="giakhuyenmai">40.000đ <label id="dongia"> 30.000đ</label></h5>
+                    
+                </div>
+
+                <div id="sanpham" data-aos="zoom-in">
+                    <img src="https://hoahandmade.vn/public/image/sanpham/168/bo-hoa-tulip-handmade-diu-dang_anh_phu.webp" alt="" id="anh">
+                    <div class="checkbox-icon">
+                        <input type="checkbox" id="select5">
+                        <label for="select5"><i class="fas fa-heart"></i></label>
+                        <input type="checkbox" id="cart5">
+                        <label for="cart5"><i class="fas fa-shopping-cart"></i></label>
+                    </div>            
+                    <h6 id="mucluc"><label id ="sale">TREND</label>HOA HANDMADE</h6>
+                    <h5 id="chitiet"><a href="sanpham5.html">Hoa handmade siêu xinh</a></h5>
+                    <h5 id="giakhuyenmai">100.000đ<label id="dongia"> 85.000đ</label></h5>
+                </div>
+
+                <div id="sanpham" data-aos="zoom-in">
+                    <img src="https://img.lazcdn.com/g/ff/kf/S5acf0dc28cca407e9bd15a752879c956I.jpg_720x720q80.jpg" alt="" id="anh">
+                    <div class="checkbox-icon">
+                        <input type="checkbox" id="select6">
+                        <label for="select6"><i class="fas fa-heart"></i></label>
+                        <input type="checkbox" id="cart6">
+                        <label for="cart6"><i class="fas fa-shopping-cart"></i></label>
+                    </div>            
+                    <h6 id="mucluc"><label id ="sale">HOT</label>TÚI HANDMADE</h6>
+                    <h5 id="chitiet"><a href="sanpham6.html">Túi thời trang</a></h5>
+                    <label id="dongia"> 90.000đ</label>
+                </div>
+
+            </div>
+    
+            <div id="right">
+                <div id="sanpham1" data-aos="zoom-in">
+                    <img src="https://bizweb.dktcdn.net/100/267/913/products/thiet-ke-chua-co-ten-33.png?v=169477044221" alt="" id="anh">
+                    <div class="checkbox-icon">
+                        <input type="checkbox" id="select7">
+                        <label for="select7"><i class="fas fa-heart"></i></label>
+                        <input type="checkbox" id="cart7">
+                        <label for="cart7"><i class="fas fa-shopping-cart"></i></label>
+                    </div>            
+                    <h6 id="mucluc"><label id ="sale">SALE</label>HOA HANDMADE</h6>
+                    <h5 id="chitiet"><a href="sanpham7.html">Hoa tulip nhiều màu</a></h5>
+                    <label id="dongia"> 50.000đ</label>
+                </div>
+
+                <div id="sanpham" data-aos="zoom-in">
+                    <img src="https://bizweb.dktcdn.net/thumb/1024x1024/100/427/928/products/khung-anh-handmade.jpg?v=1645580612553" alt="" id="anh">
+                    <div class="checkbox-icon">
+                        <input type="checkbox" id="select8">
+                        <label for="select8"><i class="fas fa-heart"></i></label>
+                        <input type="checkbox" id="cart8">
+                        <label for="cart8"><i class="fas fa-shopping-cart"></i></label>
+                    </div>            
+                    <h6 id="mucluc"><label id ="sale">-20%</label>TRANH HANDMADE</h6>
+                    <h5 id="chitiet"><a href="sanpham8.html">Tranh gỗ siêu xinh</a></h5>
+                    <h5 id="giakhuyenmai">90.000đ <label id="dongia"> 70.000đ</label></h5>
+                    
+                </div>
+
+                <div id="sanpham"data-aos="zoom-in">
+                    <img src="https://salt.tikicdn.com/cache/550x550/ts/product/80/07/85/f4ffd8faf9e86d6dff11230b8a498638.jpg" alt="" id="anh">    
+                    <div class="checkbox-icon">
+                        <input type="checkbox" id="select9">
+                        <label for="select9"><i class="fas fa-heart"></i></label>
+                        <input type="checkbox" id="cart9">
+                        <label for="cart9"><i class="fas fa-shopping-cart"></i></label>
+                    </div>            
+                    <h6 id="mucluc"><label id ="sale">HOT</label>TRANH HANDMADE</h6>
+                    <h5 id="chitiet"><a href="sanpham9.html">Tranh hoa lá thiên nhiên</a></h5>
+                    <label id="dongia"> 50.000đ</label>
+                </div>
+            </div>
+
+        </div>
+
+
+            <div id="chuyentrang">
+
+                <i class="fas fa-circle" id="tron1"><a id="trang1" href="cuahang.html">1</a></i>
+                <i class="fas fa-circle" id="tron1"><a id="trang1" href="cuahang2.html">2</a></i>
+                <i class="fas fa-circle" id="tron1"><a id="trang1" href="cuahang3.html">3</a></i>
+
+            </div>
+
+        </div>
+
+           <!-- FOOOTER -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                
+                <div class="col-md-3 footer-col">
+                    <h4>VỀ CHÚNG TÔI</h4>
+                    <p>Chúng tôi chuyên cung cấp các sản phẩm handmade chất lượng cao, mang đến sự sáng tạo và độc đáo cho khách hàng.</p>
+                    <a href="Trangchu.html">
+                        <img src="Image1\Logo1.png" alt="Logo" class="logo">
+                    </a>
+                </div>
+              
+                <div class="col-md-3 footer-col">
+                    <h4>LIÊN HỆ</h4>
+                    <p>Email: HandyCrafthandmade@gmail.com</p>
+                    <p>Phone: 0369 750 269</p>
+                    <p>Facebook: fb.com/handmade</p>
+                    <p>Địa chỉ: 490 Trần Đại Nghĩa, Quận Ngũ Hành Sơn, TP. Đà Nẵng</p>
+                </div>
+               
+                <div class="col-md-3 footer-col">
+                    <h4>CHÍNH SÁCH</h4>
+                    <p><a href="#">Chính sách bảo mật</a></p>
+                    <p><a href="#">Chính sách đổi trả</a></p>
+                    <p><a href="#">Chính sách vận chuyển</a></p>
+                </div>
+              
+                <div class="col-md-3 footer-col">
+                    <h4>ĐỊA CHỈ</h4>
+                    <div class="map-container">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3835.7927751871375!2d108.24709417525017!3d15.972194542028062!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x314210880eedcf27%3A0x88fc9cdcb6d63f85!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBDw7RuZyBuZ2jhu4cgVGjDtG5nIHRpbiB2w6AgVHJ1eeG7gW4gdGjDtG5nIFZp4buHdCBIw6BuIC0gxJDhuqFpIGjhu41jIMSQw6AgTuG6tW5n!5e0!3m2!1svi!2s!4v1716735218842!5m2!1svi!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>                    </div>
+                </div>
+            </div>
+            <hr width="100%" size="0.5px" color="gray" align="center" /> 
+            <div class="footer-bottom">
+                <p id="banquyen">HandyCraft Handmade 2024 <font color ="grey">&#169;</font> Designed by HYT</p>
+                <button onclick="topFunction()" id="backToTopBtn" title="Go to top"><i class="bi bi-chevron-double-up"></i></button>
+            </div>
+        </div>
+    </footer>
+
+
+<!-- CHATBOX -->
+<div class="chat-container">
+    <div id="chatbox" class="chatbox">
+        <div class="chatbox-content">
+            <i class="fab fa-facebook-messenger"></i>
+        </div>
+    </div>
+    <div id="callbox" class="callbox">
+        <div class="callbox-content">
+            <i class="fas fa-phone"></i>
+        </div>
+    </div>
+</div>
+
+
+    <script>
+               
+
+                //menu
+                     $(document).ready(function(){
+                        $('#toggle').click(function(){
+                            $('nav').slideToggle();
+                         });
+                     })
+
+                //phần 3
+
+                document.addEventListener('DOMContentLoaded', function() {
+                var dropdown = document.getElementById('dropdown04');
+                var dropdownMenu = dropdown.nextElementSibling;
+
+                dropdown.addEventListener('mouseover', function() {
+                    dropdownMenu.style.display = 'block';
+                });
+
+                dropdown.addEventListener('mouseout', function() {
+                    setTimeout(function() {
+                        if (!dropdownMenu.matches(':hover')) {
+                            dropdownMenu.style.display = 'none';
+                        }
+                    }, 300);
+                });
+
+                dropdownMenu.addEventListener('mouseover', function() {
+                    dropdownMenu.style.display = 'block';
+                });
+
+                dropdownMenu.addEventListener('mouseout', function() {
+                    dropdownMenu.style.display = 'none';
+                });
+            });
+
+
+            // JS_backToTopBtn
+            window.onscroll = function() {scrollFunction()};
+
+            function scrollFunction() {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    document.getElementById("backToTopBtn").style.display = "block";
+                } else {
+                    document.getElementById("backToTopBtn").style.display = "none";
+                }
+            }
+
+            function topFunction() {
+                document.body.scrollTop = 0; 
+                document.documentElement.scrollTop = 0; 
+
+
+                //JS ChatBox
+            
+            document.getElementById('chatbox').addEventListener('click', function() {
+                this.classList.add('shake');
+                setTimeout(() => {
+                    this.classList.remove('shake');
+                }, 500);
+            });
+
+            document.getElementById('callbox').addEventListener('click', function() {
+                this.classList.add('shake');
+                setTimeout(() => {
+                    this.classList.remove('shake');
+                }, 500);
+            });
+
+            }
+            
+            </script>
+
+            
+            <script>
+                AOS.init();
+            </script>
+        
+    
+    </body>
+</html>

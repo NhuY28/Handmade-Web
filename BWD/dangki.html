@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <title>Login / Sign Up Form</title>
+    <link rel="shortcut icon" href="/assets/favicon.ico" />
+    <link rel="stylesheet" href="dangki.css" />
+</head>
+<body>
+    <div class="container">
+        <heading>Đăng ký</heading>
+        <form onsubmit="signup()">
+
+            <div class="input-group">
+                <input id="username" required="" type="text" name="text" autocomplete="off" class="input">
+                <label class="user-label">Tên đăng nhập</label>
+            </div>
+            <div class="input-group">
+                <input id="lienHe" required="" type="text" name="text" autocomplete="off" class="input">
+                <label class="user-label">Email hoặc Số điện thoại</label>
+            </div>
+            <div class="input-group">
+                <input id="password" required="" type="password" name="pass" autocomplete="off" class="input">
+                <label class="user-label">Mật khẩu</label>
+            </div>
+            <div class="input-group">
+                <input id="cfpassword" required="" type="password" name="pass" autocomplete="off" class="input">
+                <label class="user-label">Xác nhận mật khẩu</label>
+            </div>
+
+            <div class="btn">
+                <button>Đăng ký</button>
+            </div>
+            <div class="link-login">
+                <center>Bạn đã có tài khoản? <a href="dangnhap.html">Đăng nhập!</a></center>
+            </div>
+
+        </form>
+    </div>    
+    <script src="dangnhap.js"></script>
+
+</body>

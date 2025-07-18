@@ -1,0 +1,314 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>lienhe.com</title>
+        <link rel="stylesheet" href="lienhe.css">
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <!-- jQuery and Bootstrap JS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://unpkg.com/@tabler/icons@latest/iconfont/tabler-icons.min.css">
+
+        <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+        <script src="https://unpkg.com/@tabler/icons@latest/icons-react/dist/index.umd.min.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+    
+        
+    </head>
+
+    <body>
+
+    <!-- HEADER -->
+    <header>
+        <!-- Phần 1 -->
+        <div id="baner">
+            <table class="table-banner">
+                <tr>
+                    <td  id="id1">   
+                        <h5 id="title1" ><marquee direction="right">Tiệm đồ handmade - Cuộc sống muôn màu</marquee></h5>
+                    </td>
+                    <td id="id2">
+                        <div class="baner-icon">
+                            <a href="https://www.facebook.com/profile.php?id=61560045097340&locale=vi_VN"><i id="icon1" class="fab fa-facebook-f col-md-1"></i></a>
+                            <a href="https://www.tiktok.com/vi-VN/"><i id="icon1" class="fab fa-tiktok col-md-1"></i></a>
+                            <a href="https://www.instagram.com/"><i id="icon1" class="fab fa-instagram col-md-1"></i></a>
+                        </div> 
+                    </td>
+                </tr>
+            </table>
+        </div>
+      
+    <!-- Phần 2 -->
+        <div id="baner1">
+            <a href="Trangchu.html"><img src="Image1\logoD.png" class="logoD"></a>
+            <form action="#" class="searchform order-sm-start order-lg-last">
+                <div class="form-group d-flex" id="search-all">
+                  <input type="text" class="form-control pl-3" placeholder="Search">
+                  <button type="submit" placeholder="" class="form-control search"><span class="fa fa-search"></span></button>
+                </div>
+            </form>
+            <div class="icon-main">
+                <a href="dangnhap.html"><i class="fas fa-user icon5"></i></a>
+                <a href="yeuthich.html"><i class="fas fa-heart icon5"></i></a>
+                <a href="giohang.html"><i class="fas fa-shopping-cart icon5"></i></a>
+            </div>
+        </div>
+        
+
+    <!-- Phần 3 -->
+        <div id="menu">
+            <div id="toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+
+            <nav>
+                <ul id="main-menu">
+                    <li>
+                       <a  href="Trangchu.html">TRANG CHỦ</a>
+                    </li> 
+                    <li>
+                        <a href="gioithieu.html">GIỚI THIỆU</a>
+                    </li> 
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="cuahang.html" id="dropdown04">CỬA HÀNG</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdown04">
+                            <a class="dropdown-item" href="gaubong.html">Gấu bông và gối handmade</a>
+                            <a class="dropdown-item" href="hoa.html">Hoa kẽm nhung</a>
+                            <a class="dropdown-item" href="tranhhoakho.html">Tranh handmade</a>
+                            <a class="dropdown-item" href="nen.html">Nến thơm</a>
+                            <a class="dropdown-item" href="tui.html">Túi</a>
+                        </div>
+                    </li>  
+                    <li>
+                        <a href="blog.html">BLOG</a>
+                    </li> 
+                    <li>
+                        <a  href="lienhe.html">LIÊN HỆ</a>
+                    </li> 
+                </ul>
+            </nav>
+        </div>
+    </header>
+       
+    <!-- Javascript Cuahang-->
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+    var dropdown = document.getElementById('dropdown04');
+    var dropdownMenu = dropdown.nextElementSibling;
+
+    dropdown.addEventListener('mouseover', function() {
+        dropdownMenu.style.display = 'block';
+    });
+
+    dropdown.addEventListener('mouseout', function() {
+        setTimeout(function() {
+            if (!dropdownMenu.matches(':hover')) {
+                dropdownMenu.style.display = 'none';
+            }
+        }, 300);
+    });
+
+    dropdownMenu.addEventListener('mouseover', function() {
+        dropdownMenu.style.display = 'block';
+    });
+
+    dropdownMenu.addEventListener('mouseout', function() {
+        dropdownMenu.style.display = 'none';
+    });
+});
+    </script>
+
+
+<!-- CONTENT -->
+<div class="container" id="container-content">
+    <h2>Liên hệ tư vấn</h2>
+    <form>
+      <div class="form-group">
+        <label for="name">Tên:</label>
+        <input type="text" class="form-control" id="name" placeholder="Vd: Nguyễn văn A" name="name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" class="form-control" id="email" placeholder="Nhập email của bạn" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="address">Địa chỉ:</label>
+        <input type="text" class="form-control" id="address" placeholder="Nhập địa chỉ của bạn" name="address" required>
+      </div>
+      <div class="form-group">
+        <label for="phone">Số điện thoại:</label>
+        <input type="text" class="form-control" id="phone" placeholder="Số điện thoại liên hệ" name="phone" required>
+      </div>
+      <div class="form-group">
+        <label for="message">Ghi chú:</label>
+        <textarea class="form-control" id="message" placeholder="Lưu ý và góp ý về sản phẩm" name="message" rows="5" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Gửi</button>
+    </form>
+  </div>
+
+
+   <!-- CHI NHÁNH -->
+  <div class="container mt-5" id="container_main">
+    <h2 class="text-center mb-4" id="h2-branch"><i class="bi bi-shop"></i> CÁC CHI NHÁNH</h2>
+    <div class="row">
+        <div class="col-md-4" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="500">
+            <div class="card">
+                <div class="card-body" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="500">
+                    <h4 class="card-title">Cơ sở chính tại Đà Nẵng</h4>
+                    <p class="card-text"><i class="bi bi-geo-alt-fill"></i> Địa chỉ: 490 Trần Đại Nghĩa, Quận Ngũ Hành Sơn, TP. Đà Nẵng </p>
+                    <p class="card-text"><i class="bi bi-clock-fill"></i> Giờ làm việc: 7:00 - 20:00</p>
+                    <p class="card-text"><i class="bi bi-telephone-fill"></i> Điện thoại: 0369 750 269</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="500">
+            <div class="card">
+                <div class="card-body" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="500">
+                    <h4 class="card-title">Chi Nhánh tại Hà Nội</h4>
+                    <p class="card-text"><i class="bi bi-geo-alt-fill"></i> Địa chỉ: 17 Lý Quốc Sư, Hàng Trống, Hoàn Kiếm, Hà Nội</p>
+                    <p class="card-text"><i class="bi bi-clock-fill"></i> Giờ làm việc: 7:00 - 20:00 </p>
+                    <p class="card-text"><i class="bi bi-telephone-fill"></i> Điện thoại: 0987 654 321</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="500">
+            <div class="card">
+                <div class="card-body" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="500">
+                    <h4 class="card-title">Chi Nhánh tại TP. Hồ Chí Minh</h4>
+                    <p class="card-text"><i class="bi bi-geo-alt-fill"></i> Địa chỉ: 26/16 Nguyễn Bỉnh Khiêm, Quận 1, Tp.Hồ Chí Minh</p>
+                    <p class="card-text"><i class="bi bi-clock-fill"></i> Giờ làm việc: 7:00 - 20:00 </p>
+                    <p class="card-text"><i class="bi bi-telephone-fill"></i> Điện thoại: 0112 233 445</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+  
+
+    <!-- FOOOTER -->
+    <footer>
+        <div class="container"> 
+            <div class="row">
+                
+                <div class="col-md-3 footer-col">
+                    <h4>VỀ CHÚNG TÔI</h4>
+                    <p>Chúng tôi chuyên cung cấp các sản phẩm handmade chất lượng cao, mang đến sự sáng tạo và độc đáo cho khách hàng.</p>
+                    <a href="Trangchu.html">
+                        <img src="Image1\Logo1.png" alt="Logo" class="logo">
+                    </a>
+                </div>
+              
+                <div class="col-md-3 footer-col">
+                    <h4>LIÊN HỆ</h4>
+                    <p><i class="bi bi-envelope-paper-fill"></i> HandyCrafthandmade@gmail.com</p>
+                    <p><i class="glyphicon glyphicon-phone-alt"></i> 0369 750 269</p>
+                    <p><i class="fab fa-facebook-f"></i>  fb.com/handmade</p>
+                    <p><i class="bi bi-geo-alt-fill"></i> 490 Trần Đại Nghĩa, Quận Ngũ Hành Sơn, TP. Đà Nẵng</p>
+                </div>
+               
+                <div class="col-md-3 footer-col">
+                    <h4>CHÍNH SÁCH</h4>
+                    <p><a href="#">Chính sách bảo mật</a></p>
+                    <p><a href="#">Chính sách đổi trả</a></p>
+                    <p><a href="#">Chính sách vận chuyển</a></p>
+                    <p><a href="#">Chính sách thanh toán</a></p>
+                </div>
+              
+                <div class="col-md-3 footer-col">
+                    <h4>ĐỊA CHỈ</h4>
+                    <div class="map-container">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3835.7927751871375!2d108.24709417525017!3d15.972194542028062!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x314210880eedcf27%3A0x88fc9cdcb6d63f85!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBDw7RuZyBuZ2jhu4cgVGjDtG5nIHRpbiB2w6AgVHJ1eeG7gW4gdGjDtG5nIFZp4buHdCBIw6BuIC0gxJDhuqFpIGjhu41jIMSQw6AgTuG6tW5n!5e0!3m2!1svi!2s!4v1716735218842!5m2!1svi!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>                    </div>
+                </div>
+            </div>
+            <hr width="100%" size="0.5px" color="gray" align="center" /> 
+            <div class="footer-bottom">
+                <p id="banquyen">HandyCraft Handmade 2024 <font color ="grey">&#169;</font> Designed by HYT</p>
+                <button onclick="topFunction()" id="backToTopBtn" title="Go to top"><i class="bi bi-chevron-double-up"></i></button>
+            </div>
+        </div>
+
+    </footer>
+
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+    <!-- CHATBOX -->
+    <div class="chat-container">
+        <div id="chatbox" class="chatbox">
+            <div class="chatbox-content">
+                <i class="fab fa-facebook-messenger"></i>
+            </div>
+        </div>
+        <div id="callbox" class="callbox">
+            <div class="callbox-content">
+                <i class="fas fa-phone"></i>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        // JS_chatbox
+        document.getElementById('chatbox').addEventListener('click', function() {
+            this.classList.add('shake');
+            setTimeout(() => {
+                this.classList.remove('shake');
+            }, 500);
+        });
+
+        document.getElementById('callbox').addEventListener('click', function() {
+            this.classList.add('shake');
+            setTimeout(() => {
+                this.classList.remove('shake');
+            }, 500);
+        });
+
+
+
+        // JS_backToTopBtn
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("backToTopBtn").style.display = "block";
+            } else {
+                document.getElementById("backToTopBtn").style.display = "none";
+            }
+        }
+
+        function topFunction() {
+            document.body.scrollTop = 0; 
+            document.documentElement.scrollTop = 0; 
+        }
+
+
+        $(document).ready(function(){
+        $('#toggle').click(function(){
+            $('nav').slideToggle();
+         });
+     })
+    </script>
+
+
+
+    </body>
+</html>
